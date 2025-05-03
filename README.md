@@ -1,8 +1,28 @@
-> Why do I have a folder named ".expo" in my project?
-The ".expo" folder is created when an Expo project is started using "expo start" command.
-> What do the files contain?
-- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
-- "settings.json": contains the server configuration that is used to serve the application manifest.
-> Should I commit the ".expo" folder?
-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+# 🛒 SmartList - Gerenciador Inteligente de Compras
+
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![AsyncStorage](https://img.shields.io/badge/AsyncStorage-5E35B1?style=for-the-badge&logo=react&logoColor=white)
+
+<div align="center">
+  <img src="./assets/app-preview.gif" width="250" alt="Demonstração interativa">
+  <img src="./assets/screen-list.png" width="250" alt="Tela de lista">
+  <img src="./assets/screen-form.png" width="250" alt="Tela de formulário">
+</div>
+
+## 📌 Visão Geral
+Solução mobile para gestão de listas de compras com:
+- ✔️ Interface intuitiva e acessível
+- ✔️ Sincronização offline-first
+- ✔️ Design system consistente
+- ✔️ Arquitetura escalável
+
+### 🚀 Destaques Técnicos
+
+### 🛠️ Arquitetura
+```typescript
+// Estrutura principal do projeto
+interface AppArchitecture {
+  pattern: "Modular";                     // Componentes independentes
+  stateManagement: "Context API";          // Gerenciamento de estado global
+  navigation: "React Navigation 6.x";      // Navegação tipo Stack + Tabs
+  styling: "StyleSheet + CSS-in-JS";       // Estilos dinâmicos
+}
